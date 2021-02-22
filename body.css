@@ -1,0 +1,21 @@
+.column {
+    float:left;
+    width: 50%;
+
+    margin-top: 6px;
+    padding: 20px;
+    border: 0px;
+    border-width: 0px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .height{
+      height: 100%;
+      width: 900px;
+  }
+
+  
