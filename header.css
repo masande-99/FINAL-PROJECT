@@ -7,21 +7,23 @@ body {
 
 .header {
   overflow: hidden;
-  /*(background-image: url(dark.jpeg);*/
   inline-size: 100%;
-  padding: 15% 700px;
+  padding: 0.02% 1px;
+  padding-top: 0.1%;
+  border: 1px solid;
   
 }
 
 .header a {
   float: left;
-  color:white;
+  color:black;
   text-align: center;
-  padding: 12px;
+  padding: 20px;
   text-decoration: none;
   font-size: 18px; 
-  line-height: 25px;
+  line-height: 30px;
   border-radius: 4px;
+  text-decoration: underline;
 }
 
 .header a.logo {
@@ -34,10 +36,10 @@ body {
   color: black;
 }
 
-.header a.active {
+/*.header a.active {
   background-color: dodgerblue;
   color: white;
-}
+}*/
 
 .header-right {
   float: right;
@@ -53,15 +55,4 @@ body {
   .header-right {
     float: none;
   }
-}
-.fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-}
-.fill img {
-  flex-shrink: 100;
-  min-width: 1000px;
-  min-height: 1000px
 }
