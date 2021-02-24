@@ -45,3 +45,14 @@ form {
   .btn-default:hover {
     background: #77a198;
   }
+
+  #align{
+    text-align: center;
+  }
+  #align p:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .color{
+    color:#c2a214 ;
+  }

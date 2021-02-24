@@ -21,7 +21,7 @@
   /*.back{
     background-color: black;
   }*/
-  .row{
+  #row1{
     background-image: url("boreal-forest-biome-730.jpg");
     background-position: 100px;
     background-size: 100%;

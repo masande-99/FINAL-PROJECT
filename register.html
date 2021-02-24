@@ -25,70 +25,67 @@
     </div>
 
 
-    <div class="row">
+    <div id="row1" class="row">
       <div class="column">  
         <form  action="/" method="post">
-
           <fieldset class="register-group">
-      
             <label>
-              Name
-              <input type="text" name="name" placeholder="Full name" required>
+                Name
+                <input type="text" name="name" placeholder="Full name" required>
             </label><br>
-      
             <label>
-              Email
-              <input type="email" name="email" placeholder="Email address" required>
+                Email
+                <input type="email" name="email" placeholder="Email address" required>
             </label><br>
-      
             <label>
-              Username :
-              <input type="text" name="username" placeholder="Enter username" required>
+                Username :
+                <input type="text" name="username" placeholder="Enter username" required>
             </label><br>
-      
             <label>
-              Comments
-              <textarea name="comments"></textarea>
+                Password
+                <input type="password"  placeholder="Please enter your password">   
+            </label> 
+
+            <label>
+                Comments
+                <textarea name="comments"></textarea>
             </label><br>
-      
           </fieldset>
-      
           <input class="btn btn-default" type="submit" name="submit" value="Sign in">
-      
         </form>
       </div>
-      <div class="column">
-        <form  action="/" method="post">
 
+
+
+      <div class="column">
+        <form  action="http://127.0.0.1:5000/add-new-user/" method="post">
             <fieldset class="register-group">
-        
               <label>
                 Name
                 <input type="text" name="name" placeholder="Full name" required>
-              </label><br>
-        
+              </label><br>        
               <label>
                 Email
                 <input type="email" name="email" placeholder="Email address" required>
-              </label><br>
-        
+              </label><br>       
               <label>
                 Username :
                 <input type="text" name="username" placeholder="Please enter your preferred username" required>
-              </label><br>
-        
+              </label><br>             
               <label>
+                Password
+                <input type="password" name="password" placeholder="Please enter your password">   
+            </label> 
+            <label>
                 Address :
-                <textarea name="Address" placeholder="Please enter your address"></textarea>
-              </label><br>
-        
-            </fieldset>
-        
-            <input class="btn btn-default" type="submit" name="submit" value="Register">
-        
+                <textarea name="address" placeholder="Please enter your address"></textarea>
+              </label><br>       
+            </fieldset>        
+            <input class="btn btn-default" type="submit" name="submit" value="Register">      
           </form>
       </div>
     </div>
-
+    <script src="main.js"></script>
+    <script src="items.js"></script>
 </body>
 </html>
