@@ -1,5 +1,6 @@
 form {
     margin-bottom: 22px;
+    justify-content: left;
   }
   input,
   select,
@@ -8,7 +9,7 @@ form {
   }
 
   .register-group label {
-    color: #648880;
+    color: #f70303;
     cursor: pointer;
     font-weight: 400;
   }
@@ -21,10 +22,11 @@ form {
     display: block;
     margin: 5px 0 27px 0;
     padding: 5px 8px;
+
   }
   .register-group input,
   .register-group textarea {
-    width: 20%;
+    width: 100%;
   }
   .register-group select {
     height: 34px;

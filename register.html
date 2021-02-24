@@ -48,17 +48,47 @@
       
             <label>
               Comments
-              <textarea name="comments" placeholder="Please leave us some comments"></textarea>
+              <textarea name="comments"></textarea>
             </label><br>
       
           </fieldset>
       
-          <input class="btn btn-default" type="submit" name="submit" value="Submit">
+          <input class="btn btn-default" type="submit" name="submit" value="Sign in">
       
         </form>
       </div>
       <div class="column">
+        <form  action="/" method="post">
+
+            <fieldset class="register-group">
         
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Full name" required>
+              </label><br>
+        
+              <label>
+                Email
+                <input type="email" name="email" placeholder="Email address" required>
+              </label><br>
+        
+              <label>
+                Username :
+                <input type="text" name="username" placeholder="Please enter your preferred username" required>
+              </label><br>
+        
+              <label>
+                Address :
+                <textarea name="Address" placeholder="Please enter your address"></textarea>
+              </label><br>
+        
+            </fieldset>
+        
+            <input class="btn btn-default" type="submit" name="submit" value="Register">
+        
+          </form>
+      </div>
+    </div>
 
 </body>
 </html>
