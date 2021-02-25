@@ -1,0 +1,68 @@
+#divback{
+    background-color: black;
+    padding-bottom: 50%;
+    padding: 4% 20%;
+    margin: 10%;
+}
+
+#backdiv{
+    background-position: center;
+    background-size: 100%;
+    padding-bottom: 29%;
+    animation: backgroundChange 10s linear infinite;
+}
+@keyframes backgroundChange {
+    0% {
+        background-image: url("rBVaVV0ptdOAFdpNAANFgElM1sQ414.jpg");
+    }
+    33% {
+      background-image: url("New\ Age-shoes-double_quarter.jpg");
+    }
+    45%{
+        background-image: url("backgroundy.jpeg");
+    }
+    66% {
+      background-image: url("jordan.png");
+    }
+    99% {
+      background-image: url("Louiv.jpg");
+    }
+  }
+  
+
+/*#backdi{
+    background-image: url("LV.jpg");
+    background-position: center;
+    background-size: 100%;
+    padding-bottom: 29%;
+}*/
+body {
+            
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-name: slidein;
+    -webkit-animation-name: slidein;
+ }
+ @-moz-keyframes slidein {
+    from {
+       margin-left:100%;
+       width:300%
+    }
+    to {
+       margin-left:0%;
+       width:100%;
+    }
+ }
+ @-webkit-keyframes slidein {
+    from {
+       margin-left:100%;
+       width:300%
+    }
+    to {
+       margin-left:0%;
+       width:100%;
+    }
+ }
+img{
+    padding-bottom: 10%;
+}
