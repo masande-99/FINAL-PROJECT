@@ -25,6 +25,7 @@ body {
   line-height: 30px;
   border-radius: 4px;
   text-decoration: underline;
+  
 }
 
 .header a.logo {
@@ -44,6 +45,8 @@ body {
 
 .header-right {
   float: right;
+  /*background-color: #ed3dc8;*/
+  background-size: 0%;
 }
 
 @media screen and (max-width: 500px) {

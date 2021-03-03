@@ -32,4 +32,27 @@
     }
   }
 
-  
+  .backdiv{
+    background-position: center;
+    background-size: 100%;
+    padding-bottom: 50%;
+    animation: backgroundChange 10s linear infinite;
+    padding-top: 16%;
+}
+@keyframes backgroundChange {
+    0% {
+        background-image: url("rBVaVV0ptdOAFdpNAANFgElM1sQ414.jpg");
+    }
+    33% {
+      background-image: url("New\ Age-shoes-double_quarter.jpg");
+    }
+    45%{
+        background-image: url("coding.jpg");
+    }
+    66% {
+      background-image: url("jordan.jpg");
+    }
+    99% {
+      background-image: url("Louiv.jpg");
+    }
+  }
