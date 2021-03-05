@@ -27,7 +27,7 @@
 
     <div id="row1" class="row">
       <div class="column">  
-        <form  action="http://127.0.0.1:5000/login/" method="post">
+        <form onsubmit="event.preventDefault; signUsers()" id="sign-users">
           <fieldset class="register-group">
             <label>
                 Name
@@ -43,7 +43,7 @@
             </label><br>
             <label>
                 Password
-                <input type="password"  placeholder="Please enter your password">   
+                <input name="password" type="password"  placeholder="Please enter your password">   
             </label> 
 
             <label>
@@ -58,7 +58,7 @@
 
 
       <div class="column">
-        <form  action="http://127.0.0.1:5000/add-new-user/" method="post">
+        <form  onsubmit="event.preventDefault; registerUsers()" id="reg-users">
             <fieldset class="register-group">
               <label>
                 Name
@@ -78,7 +78,7 @@
             </label> 
             <label>
                 Address :
-                <textarea name="address" placeholder="Please enter your address"></textarea>
+                <textarea name="address" placeholder="Please enter your address"></textarea required>
               </label><br>       
             </fieldset>        
             <input class="btn btn-default" type="submit" name="submit" value="Register">      
@@ -87,5 +87,7 @@
     </div>
     <script src="main.js"></script>
     <script src="items.js"></script>
+    <script src="register.js"></script>
+    <script src="sign-in.js"></script>
 </body>
 </html>
