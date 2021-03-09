@@ -1,176 +1,85 @@
 <!DOCTYPE html>
-<html style="width:100%"
-style="min-width:1000px"
-style="height:auto" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html
+  style="width: 100%"
+  style="min-width: 1000px"
+  style="height: auto"
+  lang="en"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="body.css" rel="stylesheet">
-    <link href="footer.css" rel="stylesheet">
-    <link href="header.css" rel="stylesheet">
-    <link href="items.css" rel="stylesheet">
-    <link href="about.css" rel="stylesheet">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="body.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="items.css" rel="stylesheet" />
+    <link href="about.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="header">
-        <div class="header-right">
-          <a class="active" href="index.html">Home</a>
-          <a href="contact.html">Contact</a>
-          <a href="about.html">About</a>
-          <a href="item.html">Shop Now</a>
-          <a href="register.html">Register</a>
+      <div class="header-right">
+        <a class="active" href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="item.html">Shop Now</a>
+        <a href="register.html">Register</a>
+        <button
+          class="place"
+          data-modal-target="#modal"
+          onclick="toggleModal()"
+        >
+          CART<i class="fa fa-shopping-cart"></i>
+        </button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">CART</div>
+            <button
+              onclick="toggleModal()"
+              data-close-button
+              class="close-button"
+            >
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body"></div>
         </div>
+      </div>
     </div>
-    
+
     <div id="backdiv"><!--img src="SNEAK FREAK.gif"--></div>
-    <div class="hove" id="divback">
-        <div class="row1">
 
-            <div class="column1" class="card">
-              <img class="container" src="jordan-shoes-1777572__340.png" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="no13.webp" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            
-
-            <div class="column1" class="card">
-              <img class="container" src="no11.jpg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="no6.webp" alt="Avatar" style="width:90%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="no3.jpg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="no1.jpg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="no4.jpg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="reebok-2061623__340.jpg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="no10.webp" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="istockphot.jpg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="running.webp" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="sports-shoes-115149__340.webp" alt="Avatar" style="width:90%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="white.jpg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="shooo.jpg" alt="Avatar" style="width: 79%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-            <div class="column1" class="card">
-              <img class="container" src="adidass.jpg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>Jordan sneakers</b></h4>
-                <p>Architect & Engineer</p>
-                <p><button>Add to Cart</button></p>
-              </div>
-            </div> 
-
-        </div>
-    </div>
     <ul id="myproducts"></ul>
 
-    <footer></footer>
+    <div class="row">
+      <div class="column"><img src="red.jpg" /></div>
+      <div class="column"><img src="allstar.jpg" /></div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="column">
+          <a href="index.html" class="right">Home</a><br />
+          <a class="active" href="about.html" class="right">About</a><br />
+          <a href="contact.html" class="right">Contact</a><br />
+          <a href="item.html" class="right">Shop now</a><br />
+          <a href="register.html">Register</a>
+        </div>
+        <div class="column">
+          <a href="index.html" class="right">Home</a><br />
+          <a class="active" href="about.html" class="right">About</a><br />
+          <a href="contact.html" class="right">Contact</a><br />
+          <a href="item.html" class="right">Shop now</a><br />
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+    </footer>
     <script src="./items.js"></script>
-</body>
+  </body>
 </html>
