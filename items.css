@@ -65,6 +65,7 @@ img {
 @media only screen and (min-width: 1000px) {
   body {
     background-color: rgb(253, 251, 251);
+    display: grid;
   }
   .header a {
     float: left;
@@ -151,13 +152,13 @@ img:hover {
 }
 
 div:hover .image {
-  opacity: 0.3;
+  opacity: 0.8;
   background-color: whitesmoke;
 }
 
-.container:hover .middle {
+/* .container:hover .middle {
   opacity: 1;
-}
+} */
 
 .text {
   background-color: #4caf50;
@@ -285,10 +286,6 @@ div:hover .image {
   bottom: 0;
   background-color: rgba(0, 0, 0, 50%);
   pointer-events: none;
-}
-#overlay.active {
-  opacity: 1;
-  pointer-events: all;
 }
 
 .place {
