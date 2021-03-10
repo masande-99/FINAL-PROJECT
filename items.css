@@ -84,7 +84,7 @@ img {
 }
 
 img:hover {
-  cursor: pointer;
+  cursor: inherit;
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -297,9 +297,9 @@ div:hover .image {
 #items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center;
   width: 30%;
-  min-width: 500px;
+  min-width: 500px; */
 }
 #myproducts {
   display: flex;

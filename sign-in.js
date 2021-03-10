@@ -1,6 +1,6 @@
 let users = [];
 
-fetch("http://127.0.0.1:5000/show-users/")
+fetch("https://final-project2021.herokuapp.com/show-users/")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
@@ -21,10 +21,10 @@ function signUsers() {
   console.log(pasword);
   let loggedIn = users.filter((user) => {
     return (
-      user.name == nam &&
-      user.email == mail &&
-      user.username == usernme &&
-      user.password == pasword
+      users.fullname == nam &&
+      users.email == mail &&
+      users.username == usernme &&
+      users.password == pasword
     );
   });
 
@@ -38,11 +38,11 @@ function signUsers() {
   }
 }
 
-function myFunction() {
-  var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
+// function myFunction() {
+//   var x = document.getElementById("myInput");
+//   if (x.type === "password") {
+//     x.type = "text";
+//   } else {
+//     x.type = "password";
+//   }
+// }

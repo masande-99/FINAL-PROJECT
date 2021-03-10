@@ -1,4 +1,4 @@
-const url = "http://127.0.0.1:5000/show-users/";
+const url = "https://final-project2021.herokuapp.com/show-users/";
 
 const ul = document.getElementById("ul");
 
@@ -11,25 +11,8 @@ function fetchUser() {
 }
 fetchUser();
 
-function login() {
-  let inputs = document.getElementsByTagName("input");
-
-  let eml = inputs[0].value;
-  let pswrd = inputs[1].value;
-  console.log(eml);
-  console.log(pswrd);
-  let loggedIn = users.filter((user) => {
-    return user.email == eml && user.password == pswrd ? true : false;
-  });
-  newFunction(loggedIn);
-
-  function newFunction(loggedIn) {
-    console.log(loggedIn);
-  }
-}
-
 function getProducts() {
-  fetch("http://127.0.0.1:5000/show-products/")
+  fetch("https://final-project2021.herokuapp.com/show-items/")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -56,7 +39,7 @@ getProducts();
 
 function addTocart(id) {
   console.log(id);
-  fetch("http://127.0.0.1:5000/show-products/")
+  fetch("https://final-project2021.herokuapp.com/show-items/")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
