@@ -1,5 +1,5 @@
 let users = [];
-
+//fetching from database the users
 fetch("https://final-project2021.herokuapp.com/show-users/")
   .then((res) => res.json())
   .then((data) => {

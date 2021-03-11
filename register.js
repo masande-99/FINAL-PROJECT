@@ -1,3 +1,4 @@
+//Function to register users
 function registerUsers() {
   const form = document.getElementById("reg-users");
   const inputs = form.getElementsByTagName("input");
@@ -26,35 +27,35 @@ function registerUsers() {
     })
     .catch((err) => console.log(err));
 }
-
+//fuction to search
 function searchButton() {
-  const form = getElementById("search");
+  const form = document.getElementById("search");
   const input = form.getElementsByTagName("input");
 
   const output = {
-    serch: inputs[0].value,
+    serch: input[0].value,
   };
   console.log(output);
 
-  if ((output = nike)) {
+  if (output >= "nike") {
     return (window.location.href = "./item.html");
   } else {
     alert("Search not found");
   }
 
-  if ((output = adidas)) {
+  if ((output = "adidas")) {
     return (window.location.href = "./item.html");
   } else {
     alert("Search not found");
   }
 
-  if ((output = puma && Puma)) {
+  if ((output = "puma" && "Puma")) {
     return (window.location.href = "./item.html");
   } else {
     alert("Search not found");
   }
 
-  if ((output = contact)) {
+  if ((output = "contact")) {
     return (window.location.href = "./contact.html");
   } else {
     alert("Search not found");

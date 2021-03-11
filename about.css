@@ -3,3 +3,12 @@
     background-color: whitesmoke;
   }
 }
+.register-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0% 18%;
+  margin: 13%;
+  justify-content: left;
+  width: 10px;
+  align-items: center;
+}

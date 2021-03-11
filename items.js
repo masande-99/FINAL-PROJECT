@@ -11,6 +11,7 @@ function fetchUser() {
 }
 fetchUser();
 
+//fetching products from the database
 function getProducts() {
   fetch("https://final-project2021.herokuapp.com/show-items/")
     .then((res) => res.json())
@@ -37,6 +38,7 @@ function getProducts() {
 }
 getProducts();
 
+//adding products to the cart
 function addTocart(id) {
   console.log(id);
   fetch("https://final-project2021.herokuapp.com/show-items/")
