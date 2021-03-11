@@ -6,7 +6,7 @@ fetch("https://final-project2021.herokuapp.com/show-users/")
     console.log(data);
     users = data;
   });
-
+//sign in function
 function signUsers() {
   const form = document.getElementById("sign-users");
   let inputs = form.getElementsByTagName("input");
@@ -21,10 +21,10 @@ function signUsers() {
   console.log(pasword);
   let loggedIn = users.filter((user) => {
     return (
-      users.fullname == nam &&
-      users.email == mail &&
-      users.username == usernme &&
-      users.password == pasword
+      user.fullname == nam &&
+      user.email == mail &&
+      user.username == usernme &&
+      user.password == pasword
     );
   });
 
@@ -37,12 +37,3 @@ function signUsers() {
     alert("Credentials invalid");
   }
 }
-
-// function myFunction() {
-//   var x = document.getElementById("myInput");
-//   if (x.type === "password") {
-//     x.type = "text";
-//   } else {
-//     x.type = "password";
-//   }
-// }

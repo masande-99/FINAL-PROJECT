@@ -10,7 +10,7 @@ function registerUsers() {
   };
   console.log(user);
 
-  fetch("http://127.0.0.1:5000/add-new-user/", {
+  fetch("https://final-project2021.herokuapp.com/add-new-user/", {
     method: "POST",
     body: JSON.stringify(user),
     headers: {
@@ -25,4 +25,38 @@ function registerUsers() {
       document.getElementById("reg-users").reset();
     })
     .catch((err) => console.log(err));
+}
+
+function searchButton() {
+  const form = getElementById("search");
+  const input = form.getElementsByTagName("input");
+
+  const output = {
+    serch: inputs[0].value,
+  };
+  console.log(output);
+
+  if ((output = nike)) {
+    return (window.location.href = "./item.html");
+  } else {
+    alert("Search not found");
+  }
+
+  if ((output = adidas)) {
+    return (window.location.href = "./item.html");
+  } else {
+    alert("Search not found");
+  }
+
+  if ((output = puma && Puma)) {
+    return (window.location.href = "./item.html");
+  } else {
+    alert("Search not found");
+  }
+
+  if ((output = contact)) {
+    return (window.location.href = "./contact.html");
+  } else {
+    alert("Search not found");
+  }
 }

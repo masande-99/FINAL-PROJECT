@@ -1,5 +1,5 @@
 function getProducts() {
-  fetch("http://127.0.0.1:5000/show-products/")
+  fetch("https://final-project2021.herokuapp.com/show-items/")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
