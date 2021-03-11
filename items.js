@@ -62,6 +62,7 @@ function addTocart(id) {
             <h4>${product.product_name}</h4>
             <h4>${product.brand_name}</h4>
             <h4>${product.price}</h4>
+            <p><button onclick="removeFromcart(${product.product_id})">Remove</button></p>
           </div>
         </div>
       `;
@@ -80,4 +81,37 @@ function addTocart(id) {
 
 function toggleModal() {
   document.getElementById("modal").classList.toggle("active");
+}
+
+function removeFromcart(id) {
+  console.log(id);
+  index = id;
+  fetch("https://final-project2021.herokuapp.com/show-items/")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      let list = document.getElementById("modal-body");
+      // console.log(list);
+      let item_json = data.filter((item) => {
+        return item.product_id == id;
+      });
+      item_json.forEach((product) => {
+        let item = `
+        
+      `;
+        list.innerHTML += item;
+        for (item = 0; item < 1; item++) {
+          console.count();
+        }
+
+        if (index == `${product.product_id}`) {
+          item[id] = ``;
+        }
+
+        window.localStorage.setItem("item", JSON.stringify(item));
+        window.localStorage.getItem("item");
+        JSON.parse(window.localStorage.getItem("item"));
+        // console.log(item);
+      });
+    });
 }
