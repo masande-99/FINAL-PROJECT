@@ -35,6 +35,10 @@ function getProducts() {
         list.innerHTML += item;
       });
     });
+  try {
+  } catch (error) {
+    console.log(error);
+  }
 }
 getProducts();
 
@@ -62,9 +66,13 @@ function addTocart(id) {
         </div>
       `;
         list.innerHTML += item;
-        window.localStorage.setItem("${product.images}", JSON.stringify(item));
+        for (item = 0; item < 1; item++) {
+          console.count();
+        }
+
+        window.localStorage.setItem("item", JSON.stringify(item));
         window.localStorage.getItem("item");
-        JSON.parse(window.localStorage.getItem("product"));
+        JSON.parse(window.localStorage.getItem("item"));
         // console.log(item);
       });
     });
