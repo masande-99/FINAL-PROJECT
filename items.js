@@ -61,7 +61,6 @@ function addTocart(id) {
             <h4>${product.product_name}</h4>
             <h4>${product.brand_name}</h4>
             <h4>${product.price}</h4>
-            <p><button onclick="removeFromcart(${product.product_id})">Remove</button></p>
           </div>
         </div>
       `;
