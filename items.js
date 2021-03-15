@@ -14,7 +14,6 @@ function getProducts() {
   fetch("https://final-project2021.herokuapp.com/show-items/")
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       let list = document.getElementById("myproducts");
 
       data.forEach((product) => {
