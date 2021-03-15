@@ -5,9 +5,7 @@ const ul = document.getElementById("ul");
 function fetchUser() {
   fetch(url)
     .then((data) => data.json())
-    .then((data) => {
-      console.log(data); //check if parameter is working
-    });
+    .then((data) => {});
 }
 fetchUser();
 
@@ -18,7 +16,7 @@ function getProducts() {
     .then((data) => {
       console.log(data);
       let list = document.getElementById("myproducts");
-      console.log(list);
+
       data.forEach((product) => {
         // console.log(product.product_id);
         let item = `
