@@ -48,7 +48,6 @@ function addTocart(id) {
   fetch("https://final-project2021.herokuapp.com/show-items/")
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       let list = document.getElementById("modal-body");
       let item_json = data.filter((item) => {
         return item.product_id == id;

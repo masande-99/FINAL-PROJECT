@@ -3,7 +3,6 @@ let users = [];
 fetch("https://final-project2021.herokuapp.com/show-users/")
   .then((res) => res.json())
   .then((data) => {
-    console.log(data);
     users = data;
   });
 //sign in function
@@ -15,10 +14,7 @@ function signUsers() {
   let mail = inputs[1].value;
   let usernme = inputs[2].value;
   let pasword = inputs[3].value;
-  console.log(nam);
-  console.log(mail);
-  console.log(usernme);
-  console.log(pasword);
+
   let loggedIn = users.filter((user) => {
     return (
       user.fullname == nam &&

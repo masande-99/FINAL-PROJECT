@@ -4,7 +4,7 @@ function getProducts() {
     .then((data) => {
       console.log(data);
       let list = document.getElementById("items");
-      console.log(list);
+
       data.forEach((product) => {
         let item = `
               <div id="row3" class= "card" >
