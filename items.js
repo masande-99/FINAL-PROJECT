@@ -22,7 +22,7 @@ function getProducts() {
             <div id="row3" class= "card" >
               <div class="column3">
                 <img class="image" src=${product.images} />
-                <h4>${product.product_name}</h4>
+                <h4 class="c3">${product.product_name}</h4>
                 <h4>${product.brand_name}</h4>
                 <h4>${product.price}</h4>
                 <p><button onclick="addTocart(${product.product_id})">Add to Cart</button></p>
@@ -53,7 +53,7 @@ function addTocart(id) {
         let item = `
         <div  id="row3" class= "card" >
           <div class="column3">
-            <img class=image src=${product.images} />
+            <img class=image1 src=${product.images} />
             <h4>${product.product_name}</h4>
             <h4>${product.brand_name}</h4>
             <h4>${product.price}</h4>
@@ -62,10 +62,14 @@ function addTocart(id) {
       `;
         list.innerHTML += item;
         for (item = 0; item < 1; item++) {
-          console.count();
+          console.count(item);
         }
       });
     });
+  try {
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 function toggleModal() {

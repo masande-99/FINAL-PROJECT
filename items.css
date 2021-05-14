@@ -151,6 +151,14 @@ img:hover {
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
+.image1 {
+  opacity: 1;
+  display: block;
+  width: 511%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
 
 .middle {
   transition: 0.5s ease;
@@ -247,8 +255,8 @@ div:hover .image {
 
 .modal {
   position: fixed;
-  top: 20%;
-  left: 65%;
+  top: 41%;
+  left: 26%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   border: 1px solid black;
@@ -287,6 +295,8 @@ div:hover .image {
 
 .modal-body {
   padding: 10px 15px;
+  display: flex;
+  max-block-size: 100%;
 }
 
 #overlay {
